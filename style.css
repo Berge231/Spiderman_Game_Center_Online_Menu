@@ -611,6 +611,26 @@ footer {
     font-weight: 700;
 }
 
+.footer-map-link {
+    display: inline-block;
+    color: var(--spidey-red);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    border: 1px solid var(--spidey-red);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.footer-map-link:hover {
+    background: var(--spidey-red);
+    color: white;
+    transform: translateY(-2px);
+}
+
 .footer-center p {
     color: var(--text-gray);
     font-size: 0.9rem;

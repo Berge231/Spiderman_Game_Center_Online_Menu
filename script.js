@@ -1,28 +1,28 @@
 const menuData = {
   foodMenu: [
     {
-      category: "Special food (Oven)",
+      category: "Special food",
       items: [
         { id: 101, name: "Special Chicken (Local)", price: 20000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
         { id: 102, name: "Special Chicken (Modern)", price: 25000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
-        { id: 103, name: "Spiderman Special Chicken", price: 30000, category: "food", img: "Images/chicken.jpg", badge: "Signature" },
-        { id: 104, name: "Half Special Chicken (Local)", price: 11000, category: "food", img: "Images/chicken.jpg" },
-        { id: 105, name: "Half Special Chicken (Modern)", price: 13000, category: "food", img: "Images/chicken.jpg" },
-        { id: 106, name: "Whole Chicken Ifulu", price: 15000, category: "food", img: "Images/chicken.jpg" },
-        { id: 107, name: "Goat Leg Ifulu", price: 15000, category: "food", img: "Images/meatlovers.jpg" },
-        { id: 108, name: "Goat Ribs Ifulu", price: 12000, category: "food", img: "Images/meatlovers.jpg" }
+        { id: 103, name: "Spiderman Special Chicken", price: 30000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
+        { id: 104, name: "Half Special Chicken (Local)", price: 11000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
+        { id: 105, name: "Half Special Chicken (Modern)", price: 13000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
+        { id: 106, name: "Whole Chicken Ifulu", price: 15000, category: "food", img: "Images/chicken.jpg", badge: "Oven"  },
+        { id: 107, name: "Goat Leg Ifulu", price: 15000, category: "food", img: "Images/meatlovers.jpg" , badge: "Oven" },
+        { id: 108, name: "Goat Ribs Ifulu", price: 12000, category: "food", img: "Images/meatlovers.jpg" , badge: "Oven" }
       ]
     },
     {
-      category: "Grilled (NyamaChoma)",
+      category: "Grilled ",
       items: [
-        { id: 201, name: "Spiderman Meat Lovers (Combo)", price: 36000, category: "food", desc: "25-Bonesteak, 2 chicken leg, 3 sausages, potatoes & gacumbari", img: "Images/meatlovers.jpg", badge: "Combo" },
-        { id: 202, name: "Grilled Chicken (Modern)", price: 18000, category: "food", img: "Images/chicken.jpg" },
-        { id: 203, name: "Grilled Chicken (Local)", price: 14000, category: "food", img: "Images/chicken.jpg" },
-        { id: 204, name: "Half Grilled Chicken", price: 9000, category: "food", img: "Images/chicken.jpg" },
-        { id: 205, name: "Goat Leg", price: 16000, category: "food", desc: "Served with 1 potato", img: "Images/meatlovers.jpg" },
-        { id: 206, name: "Goat Ribs", price: 12000, category: "food", desc: "Served with 1 potato", img: "Images/meatlovers.jpg" },
-        { id: 207, name: "Whole Tilapia Fish", price: 18000, category: "food", img: "Images/p7.jpg" }
+        { id: 201, name: "Spiderman Meat Lovers (Combo)", price: 36000, category: "food", desc: "25-Bonesteak, 2 chicken leg, 3 sausages, potatoes & gacumbari", img: "Images/meatlovers.jpg", badge: "Nyamachoma" },
+        { id: 202, name: "Grilled Chicken (Modern)", price: 18000, category: "food", img: "Images/chicken.jpg", badge: "Nyamachoma" },
+        { id: 203, name: "Grilled Chicken (Local)", price: 14000, category: "food", img: "Images/chicken.jpg", badge: "Nyamachoma" },
+        { id: 204, name: "Half Grilled Chicken", price: 9000, category: "food", img: "Images/chicken.jpg" , badge: "Nyamachoma"},
+        { id: 205, name: "Goat Leg", price: 16000, category: "food", desc: "Served with 1 potato", img: "Images/meatlovers.jpg" , badge: "Nyamachoma" },
+        { id: 206, name: "Goat Ribs", price: 12000, category: "food", desc: "Served with 1 potato", img: "Images/meatlovers.jpg" , badge: "Nyamachoma"},
+        { id: 207, name: "Whole Tilapia Fish", price: 18000, category: "food", img: "Images/p7.jpg", badge: "Nyamachoma" }
       ]
     },
     {
