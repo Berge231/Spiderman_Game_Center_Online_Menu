@@ -6,8 +6,7 @@ const menuData = {
         { id: 101, name: "Chicken Special (Local)", price: "25,000 / 15,000", category: "food", img: "Images/chicken_special.jfif", badge: "Oven" },
         { id: 102, name: "Chicken Special (Modern)", price: "30,000 / 17,000", category: "food", img: "Images/chicken_special.jfif", badge: "Oven" },
         { id: 103, name: "Spiderman Special Chicken", price: "35,000 / 20,000", category: "food", img: "Images/spiderman_special_chicken.jfif", badge: "Oven" },
-        { id: 104, name: "Half Special Chicken (Local)", price: 11000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
-        { id: 105, name: "Half Special Chicken (Modern)", price: 13000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
+        
         { id: 106, name: "Chicken Whole (Local)", price: "18,000 / 12,000", category: "food", img: "Images/chicken_whole.jfif", badge: "Oven" },
         { id: 107, name: "Goat Leg (Oven)", price: 20000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" },
         { id: 108, name: "Goat Ribs (Oven)", price: 18000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" },
@@ -20,10 +19,10 @@ const menuData = {
         { id: 201, name: "Spiderman Meat Lovers", price: 40000, category: "food", desc: "Premium selection of grilled meats, sausages & sides", img: "Images/meatlovers.jpg", badge: "Combo" },
         { id: 202, name: "Grilled Chicken (Modern)", price: "20,000 / 11,000", category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
         { id: 203, name: "Grilled Chicken (Local)", price: "18,000 / 10,000", category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
-        { id: 204, name: "Half Grilled Chicken", price: 9000, category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
-        { id: 205, name: "Goat Leg", price: 18000, category: "food", desc: "Served with some potato", img: "Images/meatlovers.jpg", badge: "Nyamachoma" },
-        { id: 206, name: "Goat Ribs", price: 15000, category: "food", desc: "Served with some potato", img: "Images/meatlovers.jpg", badge: "Nyamachoma" },
-        { id: 207, name: "Whole Tilapia Fish", price: 20000, category: "food", img: "Images/p7.jpg", badge: "Nyamachoma" }
+        
+        { id: 205, name: "Goat Leg", price: 18000, category: "food", desc: "Served with some potato", img: "Images/grilled_goat_leg.jfif", badge: "Nyamachoma" },
+        { id: 206, name: "Goat Ribs", price: 15000, category: "food", desc: "Served with some potato", img: "Images/grilled_goat_ribs.jfif", badge: "Nyamachoma" },
+        { id: 207, name: "Whole Tilapia Fish", price: 20000, category: "food", img: "Images/tilapia_fish.jfif", badge: "Nyamachoma" }
       ]
     },
     {
@@ -35,16 +34,16 @@ const menuData = {
         { id: 304, name: "Zingaro Brochette", price: 3000, category: "food", img: "Images/brochette.jpg" },
         { id: 305, name: "Liver Brochette", price: 3000, category: "food", img: "Images/brochette.jpg" },
         { id: 306, name: "Goat Brochette", price: 3000, category: "food", img: "Images/brochette.jpg" },
-        { id: 307, name: "2 Min Brochette with Chips", price: 5000, category: "food", img: "Images/brochette.jpg" }
+        { id: 307, name: "2 Min Brochette with Chips", price: 5000, category: "food", img: "Images/mini_brochette.jfif" }
       ]
     },
     {
         category: "Soup",
         items: [
-            { id: 401, name: "Veg Soup", price: 4000, category: "kids", subcat: "Kids Menu", img: "Images/download (4).jpg" },
-            { id: 402, name: "Chicken Soup", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/download (4).jpg" },
-            { id: 403, name: "Chicken Noodle Soup", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/download (4).jpg" },
-            { id: 404, name: "Mushroom Cream Soup", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/download (4).jpg" }
+            { id: 401, name: "Veg Soup", price: 4000, category: "kids", subcat: "Kids Menu", img: "Images/veg_soup.jfif" },
+            { id: 402, name: "Chicken Soup", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/chicken_soup.jfif" },
+            { id: 403, name: "Chicken Noodle Soup", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/noodles_soup.jfif" },
+            { id: 404, name: "Mushroom Cream Soup", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/mushroom_cream_soup.jfif" }
         ]
     },
     {
@@ -65,7 +64,7 @@ const menuData = {
             { id: 411, name: "Beef Burger", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/beef_burger.jpg" },
             { id: 412, name: "Chicken Burger", price: 8000, category: "kids", subcat: "Kids Menu", img: "Images/chicken_burger.jpg" },
             { id: 413, name: "Triple Beef Burger", price: 15000, category: "kids", subcat: "Kids Menu", img: "Images/tripple_burger.jpg" },
-            { id: 423, name: "Fish Burger", price: 8000, category: "kids", subcat: "Kids Menu", img: "Images/beef_burger.jpg" }
+            { id: 423, name: "Fish Burger", price: 8000, category: "kids", subcat: "Kids Menu", img: "Images/fish_burger.jfif" }
         ]
     },
     {
@@ -73,7 +72,7 @@ const menuData = {
         items: [
             { id: 414, name: "Pasta Bolognese", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/pasta.jpg" },
             { id: 415, name: "Pasta Vegetarian", price: 4000, category: "kids", subcat: "Kids Menu", img: "Images/pasta.jpg" },
-            { id: 416, name: "Carbonara Pasta", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/pasta.jpg" }
+            { id: 416, name: "Carbonara Pasta", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/carbonara_pasta.jfif" }
         ]
     },
     {
