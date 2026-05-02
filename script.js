@@ -3,24 +3,24 @@ const menuData = {
     {
       category: "Specials ",
       items: [
-        { id: 101, name: "Chicken Special (Local)", price: "25,000 / 15,000", category: "food", img: "Images/chicken.jpg", badge: "Oven" },
-        { id: 102, name: "Chicken Special (Modern)", price: "30,000 / 17,000", category: "food", img: "Images/chicken.jpg", badge: "Oven" },
-        { id: 103, name: "Spiderman Special Chicken", price: "35,000 / 20,000", category: "food", img: "Images/chicken.jpg", badge: "Oven" },
+        { id: 101, name: "Chicken Special (Local)", price: "25,000 / 15,000", category: "food", img: "Images/chicken_special.jfif", badge: "Oven" },
+        { id: 102, name: "Chicken Special (Modern)", price: "30,000 / 17,000", category: "food", img: "Images/chicken_special.jfif", badge: "Oven" },
+        { id: 103, name: "Spiderman Special Chicken", price: "35,000 / 20,000", category: "food", img: "Images/spiderman_special_chicken.jfif", badge: "Oven" },
         { id: 104, name: "Half Special Chicken (Local)", price: 11000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
         { id: 105, name: "Half Special Chicken (Modern)", price: 13000, category: "food", img: "Images/chicken.jpg", badge: "Oven" },
-        { id: 106, name: "Chicken Whole (Local)", price: "18,000 / 12,000", category: "food", img: "Images/chicken.jpg", badge: "Oven" },
-        { id: 107, name: "Goat Leg (Oven)", price: 20000, category: "food", img: "Images/meatlovers.jpg", badge: "Oven" },
-        { id: 108, name: "Goat Ribs (Oven)", price: 18000, category: "food", img: "Images/meatlovers.jpg", badge: "Oven" },
-        { id: 109, name: "Goat Ribs Half (Oven)", price: 8000, category: "food", img: "Images/meatlovers.jpg", badge: "Oven" }
+        { id: 106, name: "Chicken Whole (Local)", price: "18,000 / 12,000", category: "food", img: "Images/chicken_whole.jfif", badge: "Oven" },
+        { id: 107, name: "Goat Leg (Oven)", price: 20000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" },
+        { id: 108, name: "Goat Ribs (Oven)", price: 18000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" },
+        { id: 109, name: "Goat Ribs Half (Oven)", price: 8000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" }
       ]
     },
     {
       category: "Grilled ",
       items: [
         { id: 201, name: "Spiderman Meat Lovers", price: 40000, category: "food", desc: "Premium selection of grilled meats, sausages & sides", img: "Images/meatlovers.jpg", badge: "Combo" },
-        { id: 202, name: "Grilled Chicken (Modern)", price: "20,000 / 11,000", category: "food", img: "Images/chicken.jpg", badge: "Nyamachoma" },
-        { id: 203, name: "Grilled Chicken (Local)", price: "18,000 / 10,000", category: "food", img: "Images/chicken.jpg", badge: "Nyamachoma" },
-        { id: 204, name: "Half Grilled Chicken", price: 9000, category: "food", img: "Images/chicken.jpg", badge: "Nyamachoma" },
+        { id: 202, name: "Grilled Chicken (Modern)", price: "20,000 / 11,000", category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
+        { id: 203, name: "Grilled Chicken (Local)", price: "18,000 / 10,000", category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
+        { id: 204, name: "Half Grilled Chicken", price: 9000, category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
         { id: 205, name: "Goat Leg", price: 18000, category: "food", desc: "Served with some potato", img: "Images/meatlovers.jpg", badge: "Nyamachoma" },
         { id: 206, name: "Goat Ribs", price: 15000, category: "food", desc: "Served with some potato", img: "Images/meatlovers.jpg", badge: "Nyamachoma" },
         { id: 207, name: "Whole Tilapia Fish", price: 20000, category: "food", img: "Images/p7.jpg", badge: "Nyamachoma" }
@@ -79,25 +79,25 @@ const menuData = {
     {
         category: "Meat with Chips",
         items: [
-            { id: 417, name: "Chicken Wings", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/p5.jpg" },
-            { id: 418, name: "Chicken Lollipops", price: 7000, category: "kids", subcat: "Kids Menu", img: "Images/p5.jpg" },
-            { id: 419, name: "Chips Liver", price: 5000, category: "kids", subcat: "Kids Menu", img: "Images/p5.jpg" },
-            { id: 420, name: "Meatball with Chips", price: 5000, category: "kids", subcat: "Kids Menu", img: "Images/p5.jpg" },
-            { id: 421, name: "Chicken Leg", price: 10000, category: "kids", subcat: "Kids Menu", img: "Images/p5.jpg" }
+            { id: 417, name: "Chicken Wings", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/chicken_wings.jfif" },
+            { id: 418, name: "Chicken Lollipops", price: 7000, category: "kids", subcat: "Kids Menu", img: "Images/chicken_lolipop.jfif" },
+            { id: 419, name: "Chips Liver", price: 5000, category: "kids", subcat: "Kids Menu", img: "Images/chips_liver.jfif" },
+            { id: 420, name: "Meatball with Chips", price: 5000, category: "kids", subcat: "Kids Menu", img: "Images/meat_ball_with_chips.jfif" },
+            { id: 421, name: "Chicken Leg", price: 10000, category: "kids", subcat: "Kids Menu", img: "Images/chicken_leg.jfif" }
         ]
     },
     {
         category: "Side Dishes",
         items: [
-            { id: 501, name: "Chips Banana", price: 3000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chips.jpg" },
+            { id: 501, name: "Chips Banana", price: 3000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chips_banana.jfif" },
             { id: 502, name: "Chips Potato", price: 3000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chips.jpg" },
-            { id: 503, name: "Grilled Potato Plate", price: 2000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chips.jpg" },
-            { id: 504, name: "Grilled Banana Plate (4 pcs)", price: "2,000 / 1,000", category: "sides-dessert", subcat: "Side Dishes", img: "Images/chips.jpg" },
-            { id: 505, name: "Chicken Dry Fried", price: 6000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chicken.jpg" },
-            { id: 506, name: "Muzuzu Plate", price: 4000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chips.jpg" },
-            { id: 507, name: "Veg. Rice", price: 4000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/p1.jpg" },
-            { id: 508, name: "Plain Rice", price: 3000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/p1.jpg" },
-            { id: 509, name: "Kawunga", price: 2000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/p1.jpg" }
+            { id: 503, name: "Grilled Potato Plate", price: 2000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/grilled_potato.jfif" },
+            { id: 504, name: "Grilled Banana Plate (4 pcs)", price: "2,000 / 1,000", category: "sides-dessert", subcat: "Side Dishes", img: "Images/grilled_banana.jfif" },
+            { id: 505, name: "Chicken Dry Fried", price: 6000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chicken_dry_fries.jfif" },
+            { id: 506, name: "Muzuzu Plate", price: 4000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/muzuzu_plate.jfif" },
+            { id: 507, name: "Veg. Rice", price: 4000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/veg_rice.jfif" },
+            { id: 508, name: "Plain Rice", price: 3000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/plain_rice.jfif" },
+            { id: 509, name: "Kawunga", price: 2000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/kawunga.jfif" }
         ]
     },
     {
