@@ -102,9 +102,11 @@ const menuData = {
     {
         category: "Dessert",
         items: [
-            { id: 601, name: "Ice Cream", price: 1500, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/p7.jpg" },
-            { id: 602, name: "Pop Corn", price: 1000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/p6.jpg" },
-            { id: 603, name: "Cotton Candy", price: 1500, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/cotton_candy_mojito.jpg" }
+             { id: 602, name: "Fruit Cut", price: 6000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/fruit_cut.jfif" },
+              { id: 602, name: "Macedoine", price: 6000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/macedoine.jfif" },
+            { id: 601, name: "Ice Cream", price: 1500, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/ice_cream.jfif" },
+            { id: 602, name: "Pop Corn", price: 1000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/pop_corn.jfif" },
+            { id: 603, name: "Cotton Candy", price: 1500, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/cotton_candy.jfif" }
         ]
     }
   ],
@@ -122,21 +124,21 @@ const menuData = {
     {
         category: "Hot Tea",
         items: [
-            { id: 801, name: "Lemon Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
+            { id: 801, name: "Lemon Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/lemon_tea.jfif" },
             { id: 802, name: "Black Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
             { id: 803, name: "Ginger Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/ginger_tea.jpg" },
             { id: 804, name: "Green Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/green_tea.jpg" },
             { id: 805, name: "Spice Tea", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/spice_tea.jpg" },
-            { id: 806, name: "Mint Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
-            { id: 807, name: "Sugarcane Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
+            { id: 806, name: "Mint Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/green_tea.jpg" },
+            { id: 807, name: "Sugarcane Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/sugarcane_tea.jfif" },
             { id: 808, name: "Russian Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
             { id: 809, name: "African Tea with Sugar", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
             { id: 814, name: "African Tea with Honey", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
             { id: 810, name: "Hot Chocolate", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/hot_chocolate.jpg" },
-            { id: 815, name: "Hot / Cold Milk", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
-            { id: 811, name: "Hibiscus Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
-            { id: 812, name: "Cloves Tea", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
-            { id: 813, name: "Cinnamon Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" }
+            { id: 815, name: "Hot / Cold Milk", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/hot_milk.jfif" },
+            { id: 811, name: "Hibiscus Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/hibiscus_tea.jfif" },
+            { id: 812, name: "Cloves Tea", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/cloves_tea.jfif" },
+            { id: 813, name: "Cinnamon Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/Cinnamon_Tea.jfif" }
         ]
     },
     {
@@ -148,24 +150,24 @@ const menuData = {
             { id: 953, name: "Cocktail Juice", price: 5000, category: "drinks", subcat: "Fresh Drinks", img: "Images/cocktail_juice.jpg" },
             { id: 954, name: "Mango Juice", price: 5000, category: "drinks", subcat: "Fresh Drinks", img: "Images/mango_juice.jpg" },
             { id: 955, name: "Frozen Juice", price: 5000, category: "drinks", subcat: "Fresh Drinks", desc: "Mint, Lemongrass, Ginger, Melon/Pineapple", img: "Images/frozen.jpg" },
-            { id: 1007, name: "Detox Juice", price: 6000, category: "drinks", subcat: "Fresh Drinks", img: "Images/fresh_juice.jpg" },
-            { id: 1008, name: "Carrot Juice", price: 4000, category: "drinks", subcat: "Fresh Drinks", img: "Images/fresh_juice.jpg" }
+            { id: 1007, name: "Detox Juice", price: 6000, category: "drinks", subcat: "Fresh Drinks", img: "Images/detox_juice.jfif" },
+            { id: 1008, name: "Carrot Juice", price: 4000, category: "drinks", subcat: "Fresh Drinks", img: "Images/Carrot_Juice.jfif" }
         ]
     },
     {
         category: "Coffee (Hot)",
         items: [
-            { id: 901, name: "Espresso Double", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 902, name: "Cappuccino", price: 3500, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 904, name: "Cafe Mocha", price: 4000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 905, name: "Espresso Macchiato", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 906, name: "Latte Macchiato", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 907, name: "Long Black", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 908, name: "Black Coffee", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 909, name: "Americano", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
+            { id: 901, name: "Espresso Double", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/espresso_double.jfif" },
+            { id: 902, name: "Cappuccino", price: 3500, category: "drinks", subcat: "Coffee", img: "Images/cappuccino.jfif" },
+            { id: 904, name: "Cafe Mocha", price: 4000, category: "drinks", subcat: "Coffee", img: "Images/cafe_mocha.jfif" },
+            { id: 905, name: "Espresso Macchiato", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/espresso_macchiato.jfif" },
+            { id: 906, name: "Latte Macchiato", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/Latte_Macchiato.jfif" },
+            { id: 907, name: "Long Black", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/long_black.jfif" },
+            { id: 908, name: "Black Coffee", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/black_coffee.jfif" },
+            { id: 909, name: "Americano", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/americano.jfif" },
             { id: 910, name: "African Coffee", price: 3500, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 911, name: "Espresso Tonic", price: 4000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
-            { id: 903, name: "Cafe Latte", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" }
+            { id: 911, name: "Espresso Tonic", price: 4000, category: "drinks", subcat: "Coffee", img: "Images/Espresso_Tonic.jfif" },
+            { id: 903, name: "Cafe Latte", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/cafe_latte.jfif" }
         ]
     },
     {
@@ -185,7 +187,7 @@ const menuData = {
         { id: 1002, name: "Passion Mojito", price: 5000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Passion, Sprite", img: "Images/passion_mojito.jpg" },
         { id: 1003, name: "Watermelon Mojito", price: 4000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Melon, Sprite", img: "Images/watermelon_mojito.jpg" },
         { id: 1004, name: "Mango Mojito", price: 5000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Mango, Sprite", img: "Images/mango_mojito.jpg" },
-        { id: 1005, name: "Spiderman Mojito", price: 6000, category: "drinks", subcat: "Virgin Mojito", desc: "Signature Spidey Blend", img: "Images/spiderman_mojito.jpg", badge: "Signature" },
+        { id: 1005, name: "Spiderman Mojito", price: 6000, category: "drinks", subcat: "Virgin Mojito", desc: "Signature Spidey Blend", img: "Images/spiderman_mojito.jpg" },
         { id: 1006, name: "Cotton Candy Mojito", price: 4500, category: "drinks", subcat: "Virgin Mojito", desc: "Sweet Cotton Candy & Lemon", img: "Images/cotton_candy_mojito.jpg" }
       ]
     }
