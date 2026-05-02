@@ -6,11 +6,11 @@ const menuData = {
         { id: 101, name: "Chicken Special (Local)", price: "25,000 / 15,000", category: "food", img: "Images/chicken_special.jfif", badge: "Oven" },
         { id: 102, name: "Chicken Special (Modern)", price: "30,000 / 17,000", category: "food", img: "Images/chicken_special.jfif", badge: "Oven" },
         { id: 103, name: "Spiderman Special Chicken", price: "35,000 / 20,000", category: "food", img: "Images/spiderman_special_chicken.jfif", badge: "Oven" },
-        
+        { id: 104, name: "Beef Special", price: "30,000 / 17,000", category: "food", img: "Images/spiderman_special_chicken.jfif", badge: "Oven" },
         { id: 106, name: "Chicken Whole (Local)", price: "18,000 / 12,000", category: "food", img: "Images/chicken_whole.jfif", badge: "Oven" },
-        { id: 107, name: "Goat Leg (Oven)", price: 20000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" },
-        { id: 108, name: "Goat Ribs (Oven)", price: 18000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" },
-        { id: 109, name: "Goat Ribs Half (Oven)", price: 8000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" }
+        { id: 107, name: "Goat Leg ", price: 20000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" },
+        { id: 108, name: "Goat Ribs ", price: 18000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" },
+        { id: 109, name: "Goat Leg Special", price: 25000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" }
       ]
     },
     {
@@ -19,6 +19,7 @@ const menuData = {
         { id: 201, name: "Spiderman Meat Lovers", price: 40000, category: "food", desc: "Premium selection of grilled meats, sausages & sides", img: "Images/meatlovers.jpg", badge: "Combo" },
         { id: 202, name: "Grilled Chicken (Modern)", price: "20,000 / 11,000", category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
         { id: 203, name: "Grilled Chicken (Local)", price: "18,000 / 10,000", category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
+        { id: 204, name: "Half Grilled Chicken", price: 9000, category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
         
         { id: 205, name: "Goat Leg", price: 18000, category: "food", desc: "Served with some potato", img: "Images/grilled_goat_leg.jfif", badge: "Nyamachoma" },
         { id: 206, name: "Goat Ribs", price: 15000, category: "food", desc: "Served with some potato", img: "Images/grilled_goat_ribs.jfif", badge: "Nyamachoma" },
@@ -51,10 +52,12 @@ const menuData = {
         items: [
             { id: 405, name: "4 Season Pizza", price: "8,000 / 12,000", category: "kids", subcat: "Kids Menu", desc: "Mushroom, Ham, Veg & Sausage", img: "Images/pizza.jpg" },
             { id: 406, name: "Chicken Pizza", price: "8,000 / 12,000", category: "kids", subcat: "Kids Menu", desc: "Chicken, Vegetables", img: "Images/pizza.jpg" },
-            { id: 407, name: "Meat Lovers Pizza", price: "10,000 / 14,000", category: "kids", subcat: "Kids Menu", desc: "Beef, chicken, ham, sausage & veg", img: "Images/pizza.jpg" },
-            { id: 422, name: "Peperone (Pepperoni) Pizza", price: "8,000 / 11,000", category: "kids", subcat: "Kids Menu", desc: "Sausages & Cheese", img: "Images/pizza.jpg" },
-            { id: 409, name: "Hawaii Pizza", price: "8,000 / 12,000", category: "kids", subcat: "Kids Menu", desc: "Chicken, pineapple, ham, Vegetables", img: "Images/pizza.jpg" },
-            { id: 408, name: "Margarita Pizza", price: "8,000 / 10,000", category: "kids", subcat: "Kids Menu", desc: "Cheese, Vegetables", img: "Images/pizza.jpg" }
+            { id: 407, name: "Bolognese Pizza", price: "8,000 / 10,000", category: "kids", subcat: "Kids Menu", desc: "bolognese sauce, Ham, Veg ", img: "Images/pizza.jpg" },
+            { id: 408, name: "Beef Pizza", price: "10,000 / 12,000", category: "kids", subcat: "Kids Menu", desc: "Beef, Vegetables", img: "Images/pizza.jpg" },
+            { id: 409, name: "Meat Lovers Pizza", price: "10,000 / 14,000", category: "kids", subcat: "Kids Menu", desc: "Beef, chicken, ham, sausage & veg", img: "Images/pizza.jpg" },
+            { id: 410, name: "Peperone (Pepperoni) Pizza", price: "8,000 / 11,000", category: "kids", subcat: "Kids Menu", desc: "Sausages & Cheese", img: "Images/pizza.jpg" },
+            { id: 411, name: "Hawaii Pizza", price: "8,000 / 12,000", category: "kids", subcat: "Kids Menu", desc: "Chicken, pineapple, ham, Vegetables", img: "Images/pizza.jpg" },
+            { id: 412, name: "Margarita Pizza", price: "8,000 / 10,000", category: "kids", subcat: "Kids Menu", desc: "Cheese, Vegetables", img: "Images/pizza.jpg" }
         ]
     },
     {
@@ -102,45 +105,15 @@ const menuData = {
     {
         category: "Dessert",
         items: [
-             { id: 602, name: "Fruit Cut", price: 6000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/fruit_cut.jfif" },
-              { id: 602, name: "Macedoine", price: 6000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/macedoine.jfif" },
-            { id: 601, name: "Ice Cream", price: 1500, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/ice_cream.jfif" },
-            { id: 602, name: "Pop Corn", price: 1000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/pop_corn.jfif" },
-            { id: 603, name: "Cotton Candy", price: 1500, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/cotton_candy.jfif" }
+             { id: 601, name: "Fruit Cut", price: 6000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/fruit_cut.jfif" },
+             { id: 602, name: "Macedoine", price: 6000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/macedoine.jfif" },
+            { id: 603, name: "Ice Cream", price: 1500, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/ice_cream.jfif" },
+            { id: 604, name: "Pop Corn", price: 1000, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/pop_corn.jfif" },
+            { id: 605, name: "Cotton Candy", price: 1500, category: "sides-dessert", subcat: "Sides & Dessert", img: "Images/cotton_candy.jfif" }
         ]
     }
   ],
   drinkMenu: [
-    {
-      category: "Soft Drinks",
-      items: [
-        { id: 701, name: "Water (Small)", price: 1500, category: "drinks", subcat: "Soft Drinks", img: "Images/water.jpg" },
-        { id: 702, name: "Fanta (Small)", price: 1500, category: "drinks", subcat: "Soft Drinks", img: "Images/fanta.jpg" },
-        { id: 703, name: "Panache", price: 2000, category: "drinks", subcat: "Soft Drinks", img: "Images/panache.jpg" },
-        { id: 704, name: "Redbull", price: 4000, category: "drinks", subcat: "Soft Drinks", img: "Images/redbull.jpg" },
-        { id: 705, name: "Bavaria Non Alc", price: 4000, category: "drinks", subcat: "Soft Drinks", img: "Images/Bavaria.jpg" }
-      ]
-    },
-    {
-        category: "Hot Tea",
-        items: [
-            { id: 801, name: "Lemon Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/lemon_tea.jfif" },
-            { id: 802, name: "Black Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
-            { id: 803, name: "Ginger Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/ginger_tea.jpg" },
-            { id: 804, name: "Green Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/green_tea.jpg" },
-            { id: 805, name: "Spice Tea", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/spice_tea.jpg" },
-            { id: 806, name: "Mint Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/green_tea.jpg" },
-            { id: 807, name: "Sugarcane Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/sugarcane_tea.jfif" },
-            { id: 808, name: "Russian Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
-            { id: 809, name: "African Tea with Sugar", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
-            { id: 814, name: "African Tea with Honey", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
-            { id: 810, name: "Hot Chocolate", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/hot_chocolate.jpg" },
-            { id: 815, name: "Hot / Cold Milk", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/hot_milk.jfif" },
-            { id: 811, name: "Hibiscus Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/hibiscus_tea.jfif" },
-            { id: 812, name: "Cloves Tea", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/cloves_tea.jfif" },
-            { id: 813, name: "Cinnamon Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/Cinnamon_Tea.jfif" }
-        ]
-    },
     {
         category: "Fresh Drinks",
         items: [
@@ -155,6 +128,37 @@ const menuData = {
         ]
     },
     {
+      category: "Virgin Mojito",
+      items: [
+        { id: 1001, name: "Pineapple Mojito", price: 5000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Pineapple, Sprite", img: "Images/pineapple_mojito.jpg" },
+        { id: 1002, name: "Passion Mojito", price: 5000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Passion, Sprite", img: "Images/passion_mojito.jpg" },
+        { id: 1003, name: "Watermelon Mojito", price: 4000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Melon, Sprite", img: "Images/watermelon_mojito.jpg" },
+        { id: 1004, name: "Mango Mojito", price: 5000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Mango, Sprite", img: "Images/mango_mojito.jpg" },
+        { id: 1005, name: "Spiderman Mojito", price: 6000, category: "drinks", subcat: "Virgin Mojito", desc: "Signature Spidey Blend", img: "Images/spiderman_mojito.jpg" },
+        { id: 1006, name: "Cotton Candy Mojito", price: 4500, category: "drinks", subcat: "Virgin Mojito", desc: "Sweet Cotton Candy & Lemon", img: "Images/cotton_candy_mojito.jpg" }
+      ]
+    },
+    {
+        category: "Hot Tea",
+        items: [
+            { id: 809, name: "African Tea with Sugar", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
+            { id: 814, name: "African Tea with Honey", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
+            { id: 805, name: "Spice Tea", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/spice_tea.jpg" },
+            { id: 810, name: "Hot Chocolate", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/hot_chocolate.jpg" },
+            { id: 815, name: "Hot / Cold Milk", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/hot_milk.jfif" },
+            { id: 803, name: "Ginger Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/ginger_tea.jpg" },
+            { id: 801, name: "Lemon Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/lemon_tea.jfif" },
+            { id: 802, name: "Black Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
+            { id: 804, name: "Green Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/green_tea.jpg" },
+            { id: 806, name: "Mint Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/green_tea.jpg" },
+            { id: 807, name: "Sugarcane Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/sugarcane_tea.jfif" },
+            { id: 808, name: "Russian Tea", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/black_tea.jpg" },
+            { id: 811, name: "Hibiscus Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/hibiscus_tea.jfif" },
+            { id: 812, name: "Cloves Tea", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/cloves_tea.jfif" },
+            { id: 813, name: "Cinnamon Tea", price: 3000, category: "drinks", subcat: "Hot Tea", img: "Images/Cinnamon_Tea.jfif" }
+        ]
+    },
+    {
         category: "Coffee (Hot)",
         items: [
             { id: 901, name: "Espresso Double", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/espresso_double.jfif" },
@@ -165,7 +169,7 @@ const menuData = {
             { id: 907, name: "Long Black", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/long_black.jfif" },
             { id: 908, name: "Black Coffee", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/black_coffee.jfif" },
             { id: 909, name: "Americano", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/americano.jfif" },
-            { id: 910, name: "African Coffee", price: 3500, category: "drinks", subcat: "Coffee", img: "Images/iced cafe.jpg" },
+            { id: 910, name: "African Coffee", price: 3500, category: "drinks", subcat: "Coffee", img: "Images/african_coffee.jfif" },
             { id: 911, name: "Espresso Tonic", price: 4000, category: "drinks", subcat: "Coffee", img: "Images/Espresso_Tonic.jfif" },
             { id: 903, name: "Cafe Latte", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/cafe_latte.jfif" }
         ]
@@ -181,14 +185,13 @@ const menuData = {
         ]
     },
     {
-      category: "Virgin Mojito",
+      category: "Soft Drinks",
       items: [
-        { id: 1001, name: "Pineapple Mojito", price: 5000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Pineapple, Sprite", img: "Images/pineapple_mojito.jpg" },
-        { id: 1002, name: "Passion Mojito", price: 5000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Passion, Sprite", img: "Images/passion_mojito.jpg" },
-        { id: 1003, name: "Watermelon Mojito", price: 4000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Melon, Sprite", img: "Images/watermelon_mojito.jpg" },
-        { id: 1004, name: "Mango Mojito", price: 5000, category: "drinks", subcat: "Virgin Mojito", desc: "Lemon Juice, Mint, Mango, Sprite", img: "Images/mango_mojito.jpg" },
-        { id: 1005, name: "Spiderman Mojito", price: 6000, category: "drinks", subcat: "Virgin Mojito", desc: "Signature Spidey Blend", img: "Images/spiderman_mojito.jpg" },
-        { id: 1006, name: "Cotton Candy Mojito", price: 4500, category: "drinks", subcat: "Virgin Mojito", desc: "Sweet Cotton Candy & Lemon", img: "Images/cotton_candy_mojito.jpg" }
+        { id: 701, name: "Water (Small)", price: 1500, category: "drinks", subcat: "Soft Drinks", img: "Images/water.jpg" },
+        { id: 702, name: "Fanta (Small)", price: 1500, category: "drinks", subcat: "Soft Drinks", img: "Images/fanta.jpg" },
+        { id: 703, name: "Panache", price: 2000, category: "drinks", subcat: "Soft Drinks", img: "Images/panache.jpg" },
+        { id: 704, name: "Redbull", price: 4000, category: "drinks", subcat: "Soft Drinks", img: "Images/redbull.jpg" },
+        { id: 705, name: "Bavaria Non Alc", price: 4000, category: "drinks", subcat: "Soft Drinks", img: "Images/Bavaria.jpg" }
       ]
     }
   ]
