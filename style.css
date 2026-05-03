@@ -426,6 +426,13 @@ header {
     flex-direction: column;
 }
 
+@media (max-width: 620px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, minmax(140px, 1fr));
+        gap: 12px;
+    }
+}
+
 @media (min-width: 600px) {
     .cart-tray { width: 380px; right: -380px; }
     .menu-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; padding: 40px 5%; }
