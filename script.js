@@ -6,7 +6,7 @@ const menuData = {
         { id: 101, name: "Chicken Special (Local)", price: "25,000 / 15,000", category: "food", img: "Images/chicken_special.jfif", badge: "Oven" },
         { id: 102, name: "Chicken Special (Modern)", price: "30,000 / 17,000", category: "food", img: "Images/chicken_special.jfif", badge: "Oven" },
         { id: 103, name: "Spiderman Special Chicken", price: "35,000 / 20,000", category: "food", img: "Images/spiderman_special_chicken.jfif", badge: "Oven" },
-        { id: 104, name: "Beef Special", price: "30,000 / 17,000", category: "food", img: "Images/spiderman_special_chicken.jfif", badge: "Oven" },
+        { id: 104, name: "Beef Special", price: "30,000 / 17,000", category: "food", img: "Images/beef_special.jfif", badge: "Oven" },
         { id: 106, name: "Chicken Whole (Local)", price: "18,000 / 12,000", category: "food", img: "Images/chicken_whole.jfif", badge: "Oven" },
         { id: 107, name: "Goat Leg ", price: 20000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" },
         { id: 108, name: "Goat Ribs ", price: 18000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" },
@@ -19,11 +19,9 @@ const menuData = {
         { id: 201, name: "Spiderman Meat Lovers", price: 40000, category: "food", desc: "Premium selection of grilled meats, sausages & sides", img: "Images/meatlovers.jpg", badge: "Combo" },
         { id: 202, name: "Grilled Chicken (Modern)", price: "20,000 / 11,000", category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
         { id: 203, name: "Grilled Chicken (Local)", price: "18,000 / 10,000", category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
-        { id: 204, name: "Half Grilled Chicken", price: 9000, category: "food", img: "Images/grilled_chicken.jpg", badge: "Nyamachoma" },
-        
         { id: 205, name: "Goat Leg", price: 18000, category: "food", desc: "Served with some potato", img: "Images/grilled_goat_leg.jfif", badge: "Nyamachoma" },
         { id: 206, name: "Goat Ribs", price: 15000, category: "food", desc: "Served with some potato", img: "Images/grilled_goat_ribs.jfif", badge: "Nyamachoma" },
-        { id: 207, name: "Whole Tilapia Fish", price: 20000, category: "food", img: "Images/tilapia_fish.jfif", badge: "Nyamachoma" }
+        { id: 207, name: "Whole Tilapia Fish", price: 20000, category: "food", img: "Images/whole_tilapia_fish.jfif", badge: "Nyamachoma" }
       ]
     },
     {
@@ -32,7 +30,7 @@ const menuData = {
         { id: 301, name: "Fish Brochette", price: 4000, category: "food", img: "Images/brochette.jpg" },
         { id: 302, name: "Beef Brochette", price: 4000, category: "food", img: "Images/brochette.jpg" },
         { id: 303, name: "Chicken Brochette", price: 4000, category: "food", img: "Images/brochette.jpg" },
-        { id: 304, name: "Zingaro Brochette", price: 3000, category: "food", img: "Images/brochette.jpg" },
+        { id: 304, name: "Zingaro Brochette", price: 3000, category: "food", img: "Images/zingaro_brochette.jpg" },
         { id: 305, name: "Liver Brochette", price: 3000, category: "food", img: "Images/brochette.jpg" },
         { id: 306, name: "Goat Brochette", price: 3000, category: "food", img: "Images/brochette.jpg" },
         { id: 307, name: "2 Min Brochette with Chips", price: 5000, category: "food", img: "Images/mini_brochette.jfif" }
@@ -93,7 +91,7 @@ const menuData = {
         items: [
             { id: 501, name: "Chips Banana", price: 3000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chips_banana.jfif" },
             { id: 502, name: "Chips Potato", price: 3000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chips.jpg" },
-            { id: 503, name: "Grilled Potato Plate", price: 2000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/grilled_potato.jfif" },
+            { id: 503, name: "Grilled Potato Plate", price: 2000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/grilled_potato_plate.jfif" },
             { id: 504, name: "Grilled Banana Plate (4 pcs)", price: "2,000 / 1,000", category: "sides-dessert", subcat: "Side Dishes", img: "Images/grilled_banana.jfif" },
             { id: 505, name: "Chicken Dry Fried", price: 6000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/chicken_dry_fries.jfif" },
             { id: 506, name: "Muzuzu Plate", price: 4000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/muzuzu_plate.jfif" },
@@ -120,7 +118,7 @@ const menuData = {
             { id: 950, name: "Milkshake", price: 5500, category: "drinks", subcat: "Fresh Drinks", desc: "Vanilla / Strawberry / Chocolate", img: "Images/milkshakes.jpg" },
             { id: 951, name: "Smoothies", price: 6000, category: "drinks", subcat: "Fresh Drinks", desc: "Mango Smoothie / Banana Berry / Coffee Paste", img: "Images/smoothie.jpg" },
             { id: 952, name: "Fresh Juice", price: 4000, category: "drinks", subcat: "Fresh Drinks", desc: "Pineapple, Passion, Tomato, Carrot, etc.", img: "Images/fresh_juice.jpg" },
-            { id: 953, name: "Cocktail Juice", price: 5000, category: "drinks", subcat: "Fresh Drinks", img: "Images/cocktail_juice.jpg" },
+            { id: 953, name: "Cocktail Juice(Mocktail Juice)", price: 5000, category: "drinks", subcat: "Fresh Drinks", img: "Images/cocktail_juice.jpg" },
             { id: 954, name: "Mango Juice", price: 5000, category: "drinks", subcat: "Fresh Drinks", img: "Images/mango_juice.jpg" },
             { id: 955, name: "Frozen Juice", price: 5000, category: "drinks", subcat: "Fresh Drinks", desc: "Mint, Lemongrass, Ginger, Melon/Pineapple", img: "Images/frozen.jpg" },
             { id: 1007, name: "Detox Juice", price: 6000, category: "drinks", subcat: "Fresh Drinks", img: "Images/detox_juice.jfif" },
@@ -139,7 +137,7 @@ const menuData = {
       ]
     },
     {
-        category: "Hot Tea",
+        category: "Hot/Cold Tea",
         items: [
             { id: 809, name: "African Tea with Sugar", price: 3500, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
             { id: 814, name: "African Tea with Honey", price: 4000, category: "drinks", subcat: "Hot Tea", img: "Images/african_tea.jpg" },
