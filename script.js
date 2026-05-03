@@ -118,7 +118,7 @@ const menuData = {
             { id: 950, name: "Milkshake", price: 5500, category: "drinks", subcat: "Fresh Drinks", desc: "Vanilla / Strawberry / Chocolate", img: "Images/milkshakes.jpg" },
             { id: 951, name: "Smoothies", price: 6000, category: "drinks", subcat: "Fresh Drinks", desc: "Mango Smoothie / Banana Berry / Coffee Paste", img: "Images/smoothie.jpg" },
             { id: 952, name: "Fresh Juice", price: 4000, category: "drinks", subcat: "Fresh Drinks", desc: "Pineapple, Passion, Tomato, Carrot, etc.", img: "Images/fresh_juice.jpg" },
-            { id: 953, name: "Cocktail Juice(Mocktail Juice)", price: 5000, category: "drinks", subcat: "Fresh Drinks", img: "Images/cocktail_juice.jpg" },
+            { id: 953, name: "Cocktail Juice(Mocktail)", price: 5000, category: "drinks", subcat: "Fresh Drinks", img: "Images/cocktail_juice.jpg" },
             { id: 954, name: "Mango Juice", price: 5000, category: "drinks", subcat: "Fresh Drinks", img: "Images/mango_juice.jpg" },
             { id: 955, name: "Frozen Juice", price: 5000, category: "drinks", subcat: "Fresh Drinks", desc: "Mint, Lemongrass, Ginger, Melon/Pineapple", img: "Images/frozen.jpg" },
             { id: 1007, name: "Detox Juice", price: 6000, category: "drinks", subcat: "Fresh Drinks", img: "Images/detox_juice.jfif" },
