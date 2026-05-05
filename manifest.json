@@ -26,12 +26,6 @@
       "form_factor": "narrow"
     },
     {
-      "src": "Images/p3.jpg",
-      "sizes": "626x417",
-      "type": "image/jpeg",
-      "form_factor": "narrow"
-    },
-    {
       "src": "Images/p2.jpg",
       "sizes": "733x206",
       "type": "image/jpeg",
