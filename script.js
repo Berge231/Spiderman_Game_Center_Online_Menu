@@ -10,7 +10,7 @@ const menuData = {
         { id: 106, name: "Chicken Whole (Local)", price: "18,000 / 12,000", category: "food", img: "Images/chicken_whole.jfif", badge: "Oven" },
         { id: 107, name: "Goat Leg ", price: 20000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" },
         { id: 108, name: "Goat Ribs ", price: 18000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" },
-        { id: 109, name: "Goat Leg Special", price: 25000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" }
+        { id: 109, name: "Goat Leg Special", price: 25000, category: "food", img: "Images/goat_leg_special.jfif", badge: "Oven" }
       ]
     },
     {
