@@ -10,7 +10,14 @@ const menuData = {
         { id: 106, name: "Chicken Whole (Local)", price: "18,000 / 12,000", category: "food", img: "Images/chicken_whole.jfif", badge: "Oven" },
         { id: 107, name: "Goat Leg ", price: 20000, category: "food", img: "Images/goat_leg_oven.jfif", badge: "Oven" },
         { id: 108, name: "Goat Ribs ", price: 18000, category: "food", img: "Images/goat_ribs_oven.jfif", badge: "Oven" },
-        { id: 109, name: "Goat Leg Special", price: 25000, category: "food", img: "Images/goat_leg_special.jfif", badge: "Oven" }
+        { id: 109, name: "Goat Leg Special", price: 25000, category: "food", img: "Images/goat_leg_special.jfif", badge: "Oven" },
+        { id: 110, name: "Osso Buco", price: "30,000 / 15,000", category: "food", desc: "Braised Beef Osso Buco enhanced with fresh herbs and served with house potatoes.", img: "Images/OSSO BUCO.jfif" },
+        { id: 111, name: "Chairman Pork", price: 10000, category: "food", desc: "Marinated Pork. African style fried, served with Gaccumbavali and a choice accompaniment.", img: "Images/CHAIRMAN PORK.jfif" },
+        { id: 112, name: "Spiderman Beef Full", price: 40000, category: "food", desc: "Marinated tomahawk steak cooked African style enhanced with lemon and caramelized onions.", img: "Images/SPIDERMAN BEEF FULL.jfif" },
+        { id: 113, name: "Chicken Platter", price: 30000, category: "food", desc: "A mix chicken platter made of buffalo chicken wings, chicken thighs, chicken and chicken sausage with plantain or potatoes.", img: "Images/CHICKEN PLATTER.jfif" },
+        { id: 114, name: "Ragout du Chevre", price: 15000, category: "food", desc: "Fried Goat meat served with choice of accompaniment.", img: "Images/RAGOUT DU CHEVRE.jfif" },
+        { id: 115, name: "Spiderman Mix Grill", price: 60000, category: "food", desc: "House mix grill platter made of Beef, chicken, Goat, Pork and fish served with a choice of accompaniment.", img: "Images/SPIDERMAN MIX GRILL.jfif" },
+        { id: 116, name: "Pork Chop", price: 10000, category: "food", desc: "Freshly prepared at Spiderman Game Center.", img: "Images/PORK CHOP.jfif" }
       ]
     },
     {
@@ -37,6 +44,15 @@ const menuData = {
       ]
     },
     {
+        category: "Sizzling",
+        items: [
+            { id: 1101, name: "Chicken Sizzling", price: 12000, category: "food", img: "Images/Chicken Sizzling.jfif" },
+            { id: 1102, name: "Beef Sizzling", price: 12000, category: "food", img: "Images/Beef Sizzling.jfif" },
+            { id: 1103, name: "Mix Vegetable Sizzling", price: 8000, category: "food", img: "Images/Mix Vegetable Sizzling.jfif" },
+            { id: 1104, name: "Pork Sizzling", price: 12000, category: "food", img: "Images/Pork Sizzling.jfif" }
+        ]
+    },
+    {
         category: "Soup",
         items: [
             { id: 401, name: "Veg Soup", price: 4000, category: "kids", subcat: "Kids Menu", img: "Images/veg_soup.jfif" },
@@ -55,7 +71,8 @@ const menuData = {
             { id: 409, name: "Meat Lovers Pizza", price: "10,000 / 14,000", category: "kids", subcat: "Kids Menu", desc: "Beef, chicken, ham, sausage & veg", img: "Images/pizza.jpg" },
             { id: 410, name: "Peperone (Pepperoni) Pizza", price: "8,000 / 11,000", category: "kids", subcat: "Kids Menu", desc: "Sausages & Cheese", img: "Images/pizza.jpg" },
             { id: 411, name: "Hawaii Pizza", price: "8,000 / 12,000", category: "kids", subcat: "Kids Menu", desc: "Chicken, pineapple, ham, Vegetables", img: "Images/pizza.jpg" },
-            { id: 412, name: "Margarita Pizza", price: "8,000 / 10,000", category: "kids", subcat: "Kids Menu", desc: "Cheese, Vegetables", img: "Images/pizza.jpg" }
+            { id: 412, name: "Margarita Pizza", price: "8,000 / 10,000", category: "kids", subcat: "Kids Menu", desc: "Cheese, Vegetables", img: "Images/pizza.jpg" },
+            { id: 424, name: "Mexican Pizza", price: 12000, category: "kids", subcat: "Kids Menu", desc: "Made of tomato sauce, Oregano, Onion, green pepper, Minced beef, green chili.", img: "Images/MEXICAN PIZZA.jfif" }
         ]
     },
     {
@@ -73,7 +90,26 @@ const menuData = {
         items: [
             { id: 414, name: "Pasta Bolognese", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/pasta.jpg" },
             { id: 415, name: "Pasta Vegetarian", price: 4000, category: "kids", subcat: "Kids Menu", img: "Images/pasta.jpg" },
-            { id: 416, name: "Carbonara Pasta", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/carbonara_pasta.jfif" }
+            { id: 416, name: "Carbonara Pasta", price: 6000, category: "kids", subcat: "Kids Menu", img: "Images/carbonara_pasta.jfif" },
+            { id: 425, name: "Pomme Napolitano", price: 10000, category: "kids", subcat: "Kids Menu", img: "Images/Pomme Napolitano.jfif" },
+            { id: 426, name: "Steak ang Pomme", price: 12000, category: "kids", subcat: "Kids Menu", img: "Images/Steak ang Pomme.jfif" }
+        ]
+    },
+    {
+        category: "Beef Dishes",
+        items: [
+            { id: 1201, name: "Fillet Mignon", price: 10000, category: "food", desc: "Marinated end part of fillet pan seared with choice of accompaniment.", img: "Images/FILLET MIGNON.jfif" },
+            { id: 1202, name: "Beef Mushroom Steak", price: 10000, category: "food", desc: "Marinated Beef fillet pan seared and with choice of accompaniment.", img: "Images/BEEF MUSHROOM STEAK.jfif" },
+            { id: 1203, name: "Pepper Steak", price: 10000, category: "food", desc: "Beef Fillet Steak cooked in pepper sauce finished with fresh herbs.", img: "Images/PEPPER STEAK.jfif" },
+            { id: 1204, name: "Beef Bourguignon", price: 10000, category: "food", desc: "Beef fillet cube cooked in Red Sauce finished with fresh herbs.", img: "Images/BEEF BOURGUIGNON.jfif" }
+        ]
+    },
+    {
+        category: "Cold Starter",
+        items: [
+            { id: 1301, name: "Chef Signature Salad", price: 9000, category: "food", desc: "Lettuce, tomatoes, carrots, cucumber, onions, avocado, marinated fried chicken, honey mustard dressing.", img: "Images/CHEF SIGNATURE SALAD.jfif" },
+            { id: 1302, name: "Tuna and Avocado", price: 10000, category: "food", desc: "Lettuce, avocado and tuna fried fish with balsamic dressing.", img: "Images/TUNA AND AVOCADO.jfif" },
+            { id: 1303, name: "Chicken and Mango Salad", price: 10000, category: "food", desc: "Chicken and mango on a bed of mix garden salad.", img: "Images/CHICKEN AND MANGO SALAD.jfif" }
         ]
     },
     {
@@ -97,7 +133,8 @@ const menuData = {
             { id: 506, name: "Muzuzu Plate", price: 4000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/muzuzu_plate.jfif" },
             { id: 507, name: "Veg. Rice", price: 4000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/veg_rice.jfif" },
             { id: 508, name: "Plain Rice", price: 3000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/plain_rice.jfif" },
-            { id: 509, name: "Kawunga", price: 2000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/kawunga.jfif" }
+            { id: 509, name: "Kawunga", price: 2000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/kawunga.jfif" },
+            { id: 510, name: "Cheese Potatoes", price: 5000, category: "sides-dessert", subcat: "Side Dishes", img: "Images/Cheese potatoes.jfif" }
         ]
     },
     {
