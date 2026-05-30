@@ -35,6 +35,7 @@ const productImages = [
   './Images/Cheese potatoes.jfif',
   './Images/CHEF SIGNATURE SALAD.jfif',
   './Images/CHICKEN AND MANGO SALAD.jfif',
+  './Images/Chicken butter garlic.jfif',
   './Images/chicken_burger.jpg',
   './Images/chicken_dry_fries.jfif',
   './Images/chicken_leg.jfif',

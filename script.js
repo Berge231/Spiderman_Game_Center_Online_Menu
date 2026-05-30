@@ -119,7 +119,8 @@ const menuData = {
                 { id: 418, name: "Chicken Lollipops", price: 7000, category: "kids", subcat: "Kids Menu", img: "Images/chicken_lolipop.jfif" },
                 { id: 419, name: "Chips Liver", price: 5000, category: "kids", subcat: "Kids Menu", img: "Images/chips_liver.jfif" },
                 { id: 420, name: "Meatball with Chips", price: 5000, category: "kids", subcat: "Kids Menu", img: "Images/meat_ball_with_chips.jfif" },
-                { id: 421, name: "Chicken Leg", price: 10000, category: "kids", subcat: "Kids Menu", img: "Images/chicken_leg.jfif" }
+                { id: 421, name: "Chicken Leg", price: 10000, category: "kids", subcat: "Kids Menu", img: "Images/chicken_leg.jfif" },
+                { id: 422, name: "Chicken butter garlic", price: 10000, category: "kids", subcat: "Kids Menu", img: "Images/Chicken butter garlic.jfif" }
             ]
         },
         {
