@@ -207,7 +207,7 @@ const menuData = {
                 { id: 909, name: "Americano", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/americano.jfif" },
                 { id: 910, name: "African Coffee", price: 3500, category: "drinks", subcat: "Coffee", img: "Images/african_coffee.jfif" },
                 { id: 911, name: "Espresso Tonic", price: 4000, category: "drinks", subcat: "Coffee", img: "Images/Espresso_Tonic.jfif" },
-                { id: 903, name: "Cafe Latte", price: 3000, category: "drinks", subcat: "Coffee", img: "Images/cafe_latte.jfif" }
+                { id: 903, name: "Cafe Latte", price: 3500, category: "drinks", subcat: "Coffee", img: "Images/cafe_latte.jfif" }
             ]
         },
         {
