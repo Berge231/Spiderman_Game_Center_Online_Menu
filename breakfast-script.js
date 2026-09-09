@@ -266,7 +266,7 @@ function renderBreakfastMenu(items) {
                 <div class="rating-bar">
                     <i class="fas fa-star"></i>
                     <strong>${item.rating}</strong>
-                    <span>(${item.reviews}) • ${item.prepTime}</span>
+                    <span>• ${item.prepTime}</span>
                 </div>
                 <h3 class="card-title">${item.name}</h3>
                 <p class="card-desc">${item.desc}</p>
