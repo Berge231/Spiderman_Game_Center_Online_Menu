@@ -6,8 +6,11 @@ const EXTERNAL_CACHE = 'spiderman-external-v1';
 const urlsToCache = [
   './',
   './index.html',
+  './breakfast.html',
   './style.css',
+  './breakfast-style.css',
   './script.js',
+  './breakfast-script.js',
   './manifest.json',
   './Images/sgc_logo.png',
   './Images/offline-fallback.svg'

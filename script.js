@@ -239,7 +239,24 @@ const allItems = [
     ...menuData.drinkMenu.flatMap(cat => cat.items.map(i => ({ ...i, mainCat: i.category, subCatName: cat.category })))
 ];
 
-let cart = [];
+function getSharedCart() {
+    try {
+        const stored = localStorage.getItem('sgc_cart');
+        return stored ? JSON.parse(stored) : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+function saveSharedCart(cartArray) {
+    try {
+        localStorage.setItem('sgc_cart', JSON.stringify(cartArray));
+    } catch (e) {
+        console.error("Failed to save cart to localStorage", e);
+    }
+}
+
+let cart = getSharedCart();
 const menuGrid = document.getElementById('menuGrid');
 const searchInput = document.getElementById('searchInput');
 const filterBtns = document.querySelectorAll('.filter-btn');
@@ -407,6 +424,7 @@ function createFlyingIcon(button, imgUrl) {
 
 
 function updateCartUI() {
+    saveSharedCart(cart);
     const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
     cartCountEl.textContent = totalCount;
 
@@ -434,7 +452,7 @@ function updateCartUI() {
     `).join('');
 
     const total = cart.reduce((sum, item) => {
-        const priceVal = typeof item.price === 'number' ? item.price : parseInt(item.price.split('/')[0].replace(/[^\d]/g, ''));
+        const priceVal = typeof item.price === 'number' ? item.price : parseInt(String(item.price).split('/')[0].replace(/[^\d]/g, ''));
         return sum + (priceVal * item.quantity);
     }, 0);
     totalPriceEl.textContent = `${total.toLocaleString()} FRW`;

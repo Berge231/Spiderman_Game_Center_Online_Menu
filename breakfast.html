@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff6b00">
+    <title>Spiderman Game Center | Breakfast Menu</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Images/sgc_logo.png">
+    <link rel="manifest" href="manifest.json">
+    <!-- Google Fonts & FontAwesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="breakfast-style.css">
+</head>
+<body>
+
+    <!-- Ambient Glass Background Orbs -->
+    <div class="ambient-glow">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <div class="app-container">
+
+        <!-- Glass Header -->
+        <header class="glass-header">
+            <div class="header-left">
+                <a href="index.html" class="back-btn" title="Back to Main Menu">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+                <div class="user-greeting">
+                    <span>Good Morning ☕</span>
+                    <h2>Good Food Good Mood!</h2>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button type="button" class="cart-glass-btn" id="headerCartBtn" onclick="openCartTray()">
+                    <i class="fas fa-shopping-basket"></i>
+                    <span>Cart</span>
+                    <span class="cart-badge" id="cartBadgeCount">0</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Glass Search Bar -->
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="breakfastSearch" class="glass-search" placeholder="Search scrambled eggs, coffee, crepes, juice...">
+        </div>
+
+        <!-- Hero Promo Banner -->
+        <section class="hero-promo">
+            <div class="promo-content">
+                <div class="promo-tag">
+                    <i class="fas fa-crown"></i> Full Spiderman Breakfast Menu
+                </div>
+                <h1 class="promo-title">
+                    Complete Breakfast <span class="highlight">15,000 FRW</span> / Person
+                </h1>
+                <p class="promo-desc">
+                    Served with all 9 items: Eggs/Omelette with cheese, Sausages, Cheese potatoes, French toast, Veg spaghetti, Crepes/Cupcakes, Mixed fruits, Coffee/Tea & Fresh juice!
+                </p>
+                <button class="promo-btn" onclick="openCustomizationModal(9001)">
+                    Order Full Menu (15k FRW) <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="promo-img-container">
+                <div class="promo-slideshow" id="promoSlideshow">
+                    <!-- 9 Breakfast Item Images auto-slide here -->
+                </div>
+                <div class="discount-badge" style="width: 65px; height: 65px; font-size: 0.7rem; z-index: 10;">
+                    <span>15,000</span>
+                    <span>FRW/p</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Filter Pills -->
+        <div class="category-scroll">
+            <button class="cat-pill active" data-category="all">
+                <i class="fas fa-th-large"></i> All Breakfasts
+            </button>
+            <button class="cat-pill" data-category="eggs">
+                <i class="fas fa-egg"></i> Eggs & Omelette
+            </button>
+            <button class="cat-pill" data-category="savory">
+                <i class="fas fa-hotdog"></i> Sausages & Sides
+            </button>
+            <button class="cat-pill" data-category="bakery">
+                <i class="fas fa-bread-slice"></i> Toast & Crepes
+            </button>
+            <button class="cat-pill" data-category="fruits">
+                <i class="fas fa-apple-alt"></i> Fresh Fruits
+            </button>
+            <button class="cat-pill" data-category="drinks">
+                <i class="fas fa-mug-hot"></i> Coffee & Juice
+            </button>
+        </div>
+
+        <!-- Popular Breakfast Section -->
+        <div class="section-header">
+            <h2 class="section-title">Breakfast Menu Items</h2>
+        </div>
+
+        <!-- Food Grid -->
+        <main class="food-grid" id="foodGrid">
+            <!-- Dynamically populated via breakfast-script.js -->
+        </main>
+    </div>
+
+    <!-- Glass Interactive Customization Modal (Mirroring uploaded mockup right side) -->
+    <div class="modal-overlay" id="itemModal">
+        <div class="glass-modal">
+            <button class="modal-close-btn" id="closeModalBtn">&times;</button>
+            <button class="modal-fav-btn" onclick="toggleFavorite(this)">
+                <i class="far fa-heart"></i>
+            </button>
+
+            <img id="modalImage" src="" alt="Breakfast Item" class="modal-header-image">
+
+            <div class="modal-body">
+                <span class="modal-badge" id="modalBadge">Spiderman Special</span>
+                <div class="modal-title-row">
+                    <h2 class="modal-title" id="modalTitle">Item Title</h2>
+                    <span class="modal-price" id="modalPrice">0 FRW</span>
+                </div>
+                <p class="modal-desc" id="modalDesc">Item Description goes here.</p>
+
+                <!-- Customization Options Injection Container -->
+                <div id="modalOptionsContainer"></div>
+
+                <!-- Footer Action -->
+                <div class="modal-footer">
+                    <div class="qty-control">
+                        <button class="qty-btn-modal" onclick="changeModalQty(-1)">-</button>
+                        <span class="qty-val-modal" id="modalQtyVal">1</span>
+                        <button class="qty-btn-modal" onclick="changeModalQty(1)">+</button>
+                    </div>
+                    <button class="modal-add-btn" id="modalAddBtn" onclick="submitModalAddToCart(event)">
+                        <span id="modalAddTotalText">Add to Cart</span>
+                        <i class="fas fa-shopping-bag"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Glass Side Cart Tray -->
+    <aside class="cart-tray" id="cartTray">
+        <div class="tray-header">
+            <h3>Your Selection</h3>
+            <button id="closeCart" onclick="closeCartTray()">&times;</button>
+        </div>
+        <div class="tray-items" id="trayItems">
+            <p class="empty-msg">Your tray is empty.</p>
+        </div>
+        <div class="tray-footer">
+            <div class="total">Total: <span id="totalPrice">0 FRW</span></div>
+            <button class="order-btn" onclick="alert('Order placed successfully! We are preparing your breakfast.')">Level Up Your Hunger</button>
+        </div>
+    </aside>
+
+    <!-- Glass Floating Navigation Bar -->
+    <nav class="glass-nav-bar">
+        <a href="index.html" class="nav-item">
+            <i class="fas fa-home"></i>
+            <span>Main Menu</span>
+        </a>
+        <a href="breakfast.html" class="nav-item active">
+            <i class="fas fa-utensils"></i>
+            <span>Breakfast</span>
+        </a>
+        <div class="nav-item" onclick="openCartTray()" style="cursor: pointer;">
+            <i class="fas fa-shopping-basket"></i>
+            <span>Cart</span>
+        </div>
+    </nav>
+
+    <script src="breakfast-script.js"></script>
+</body>
+</html>
