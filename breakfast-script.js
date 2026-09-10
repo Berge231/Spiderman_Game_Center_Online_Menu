@@ -143,7 +143,7 @@ const breakfastItems = [
         reviews: 110,
         prepTime: "10-15 min",
         desc: "Fluffy omelette packed with melted cheddar cheese, perfect for breakfast lovers.",
-        img: "Images/Omelette with Cheese.jpg",
+        img: "Images/Omelette-with-cheese.jpg",
         badge: "15k Menu Item"
     },
     {
@@ -155,7 +155,7 @@ const breakfastItems = [
         reviews: 95,
         prepTime: "8 min",
         desc: "Soft vanilla or chocolate cupcakes topped with creamy frosting.",
-        img: "Images/Cupcakes.jpg",
+        img: "Images/cupcakes.jpg",
         badge: "15k Menu Item"
     },
     {
